@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compat`ible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Beranda</title>
+  </head>
+  <body>
+    <section>
+      <img src="img1/tanah.png" alt="tanah" id="tanah" />
+      <img src="img1/moon.png" alt="moon" id="moon" />
+      <img src="img1/pohon.png" id="pohon" alt="pohon" />
+      <img src="img1/peri cewe.png" alt="periCewe" id="periCewe" />
+      <img src="img1/stars2.png" alt="stars2" id="stars2" />
+      <img src="img1/stars.png" alt="stars" id="stars" />
+      <h2 id="text">METAWEB</h2>
+    </section>
+
+    <!-- Menu -->
+    <div class="sec container-fluid" id="menu">
+      <div class="row justify-content-center">
+        <div class="col-sm-3 mb-5 me-lg-5" id="book">
+          <div class="card">
+            <img src="img/intro1.png" class="text3d img-fluid" alt="menu" />
+          </div>
+        </div>
+        <div class="col-sm-3 mb-5" id="hist">
+          <div class="card">
+            <img src="img/history1.png" class="metahist img-fluid" alt="menu" />
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-3 mb-5 me-lg-5" id="room">
+          <div class="card">
+            <img src="img/rooms.png" class="text3d2 img-fluid" alt="menu" />
+          </div>
+        </div>
+        <div class="col-sm-3 mb-5" id="vid">
+          <div class="card">
+            <img src="img/videos.png" class="metavid img-fluid" alt="menu" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir menu -->
+
+    <!-- footer -->
+    <footer>
+      <div class="container-fluid footer" id="footer">
+        <center>
+          <span>
+            <a href="#footer"> <img src="https://img.icons8.com/fluency/48/000000/facebook.png" style="width: 30px; height: 30px" /></a
+          ></span>
+          <span>
+            <a href="#footer"> <img src="https://img.icons8.com/fluency/100/000000/instagram-new.png" style="width: 30px; height: 30px" /></a
+          ></span>
+          <span>
+            <a href="#footer"> <img src="https://img.icons8.com/office/2x/whatsapp.png" style="width: 25px; height: 23px" /></a
+          ></span>
+          <span>
+            <a href="#footer"> <img src="https://img.icons8.com/plasticine/400/000000/github.png" style="width: 36px; height: 36px" /></a
+          ></span>
+        </center>
+        <div style="text-align: center">Copyright &copy; 2022 All right reserved</div>
+        <div style="text-align: center">Designed by Aldow & Farhan</div>
+      </div>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <!-- Tilt js -->
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector("#startButton"), {
+        speed: 10,
+        scale: 1.2,
+      });
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        speed: 100,
+        scale: 1.2,
+      });
+    </script>
+    <!-- Akhir tilt js -->
+
+    <!-- paralax dan navigasi-->
+    <script>
+      let moon = document.getElementById("moon");
+      let periCewe = document.getElementById("periCewe");
+      let pohon = document.getElementById("pohon");
+      let stars = document.getElementById("stars");
+      let stars2 = document.getElementById("stars2");
+      let text = document.getElementById("text");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        stars.style.top = value + 0.05 + "px";
+        moon.style.top = value + 0.08 + "px";
+        stars2.style.top = value + 0.05 + "px";
+        text.style.right = -100 + value + 0.1 + "%";
+        periCewe.style.bottom = value + 0.08 + "px";
+      });
+
+      const book = document.getElementById("book");
+      book.addEventListener("click", metaBook);
+
+      const hist = document.getElementById("hist");
+      hist.addEventListener("click", metaHist);
+
+      const room = document.getElementById("room");
+      room.addEventListener("click", metaRoom);
+
+      const vid = document.getElementById("vid");
+      vid.addEventListener("click", metaVid);
+
+      function metaBook() {
+        window.location.href = "metaBook.html";
+      }
+
+      function metaHist() {
+        window.location.href = "metahist.html";
+      }
+
+      function metaRoom() {
+        window.location.href = "metaRoom.html";
+      }
+
+      function metaVid() {
+        window.location.href = "metaVid.html";
+      }
+    </script>
+  </body>
+</html>

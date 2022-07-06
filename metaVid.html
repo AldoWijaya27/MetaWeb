@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Slider</title>
+    <link rel="stylesheet" href="vid.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <video class="slider" autoplay loop muted controls>
+        <source src="vid/vid1.mp4" type="video/mp4" />
+      </video>
+      <ul class="d-flex flex-row justify-content-center">
+        <li
+          class="slid"
+          onclick="videoslider('vid/vid1.mp4')"
+          title="Social in the Metaverse
+Src: https://youtu.be/afdnbXXbBTg
+Yt : Meta"
+        >
+          <video src="vid/vid1.mp4"></video>
+        </li>
+        <li
+          class="slid"
+          onclick="videoslider('vid/vid2.mp4')"
+          title="Explore the Medical Metaverse with Elucis
+Src: https://youtu.be/Wt8an9e_4Jk
+Yt : Realize Medical"
+        >
+          <video src="vid/vid2.mp4"></video>
+        </li>
+        <li
+          class="slid"
+          onclick="videoslider('vid/vid4.mp4')"
+          title="Gaming in the Metaverse
+Src: https://youtu.be/5FwztKGQmd8
+Yt : Meta"
+        >
+          <video src="vid/vid4.mp4"></video>
+        </li>
+        <li
+          class="slid"
+          onclick="videoslider('vid/vid5.mp4')"
+          title="Education in the Metaverse
+Src: https://youtu.be/KLOcj5qvOio
+Yt : Meta"
+        >
+          <video src="vid/vid5.mp4"></video>
+        </li>
+        <li class="home" title="Back to Menu">
+          <a href="index.html"><img src="img/home.png" alt="home button" /></a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- JS Slider -->
+    <script>
+      function videoslider(links) {
+        document.querySelector(".slider").src = links;
+      }
+    </script>
+    <!-- Vanila tilt -->
+    <script src="vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".slid"), {
+        max: 20,
+        speed: 200,
+        // glare: true,
+        // "max-glare": 1,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="metaRoom.css" />
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
+    <title>Meta Room</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav">
+        <div class="box">
+          <img style="margin-left: 10px" src="img/home.png" />
+        </div>
+        <div class="konten">
+          <a style="margin-left: 9px" href="index.html">Home</a>
+        </div>
+      </div>
+      <div class="nav">
+        <div class="box">
+          <img src="img/history.png" />
+        </div>
+        <div class="konten">
+          <a href="metaBook.html">Intro</a>
+        </div>
+      </div>
+      <div class="nav">
+        <div class="box">
+          <img src="img/intro.png" alt="VR" />
+        </div>
+        <div class="konten">
+          <a href="metaHist.html">History</a>
+        </div>
+      </div>
+      <div class="nav">
+        <div class="box">
+          <img src="img/room.png" />
+        </div>
+        <div class="konten">
+          <a href="metaRoom.html">Room</a>
+        </div>
+      </div>
+      <div class="nav">
+        <div class="box">
+          <img style="margin-right: 15px" src="img/video.png" />
+        </div>
+        <div class="konten">
+          <a style="margin-right: 10px" href="metavid.html">video</a>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class="container">
+        <div class="card">
+          <div class="imgBox">
+            <img src="img/vr1.png" alt="VR" />
+            <h2 class="judul1">Metaverse Website</h2>
+          </div>
+          <div class="content">
+            <div class="teks">
+              <p>
+                <span style="font-weight: bold; color: rgb(130, 180, 245)">Link:</span><span style="font-style: italic"> fremtidensuddannelser.dk</span> <br /><span style="font-weight: bold; color: rgb(130, 180, 245)">Info: </span>Website
+                pendidikan yang menggunakan konsep metaverse. <br />
+              </p>
+            </div>
+            <a href="https://fremtidensuddannelser.dk/" target="_blank">Visit</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBox">
+            <img src="img/vr2.png" alt="VR" />
+            <h2 class="judul2">Metaverse Website</h2>
+          </div>
+          <div class="content">
+            <div class="teks">
+              <p>
+                <span style="font-weight: bold; color: rgb(107, 253, 107)">Link:</span><span style="font-style: italic"> kodeclubs.com</span> <br /><span style="font-weight: bold; color: rgb(107, 253, 107)">Info: </span>Website social sport
+                yang menggunakan konsep metaverse. <br />
+              </p>
+            </div>
+            <a href="https://kodeclubs.com/" target="_blank">Visit</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBox">
+            <img src="img/vr3.png" alt="VR" />
+            <h2 class="judul3">Metaverse Website</h2>
+          </div>
+          <div class="content">
+            <div class="teks">
+              <p style="color: rgb(97, 87, 87); font-size: 30px">Coming Soon!!!</p>
+            </div>
+            <a href="#" class="noDrop" style="background: grey">Visit</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bubble">
+        <img src="img/bubble.png" class="balon" alt="" />
+        <img src="img/bubble.png" class="balon" alt="" />
+        <img src="img/bubble.png" class="balon" alt="" />
+        <img src="img/bubble.png" class="balon" alt="" />
+        <img src="img/bubble.png" class="balon" alt="" />
+        <img src="img/bubble.png" class="balon" alt="" />
+        <img src="img/bubble.png" class="balon" alt="" />
+      </div>
+    </section>
+
+    <!-- Vanila tilt -->
+    <script src="vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 15,
+        speed: 200,
+        // glare: true,
+        // "max-glare": 0.2,
+      });
+    </script>
+  </body>
+</html>

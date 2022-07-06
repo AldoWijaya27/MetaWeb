@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="metaHist.css" />
+    <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet" />
+    <title>Meta History</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav">
+        <div class="box">
+          <img style="margin-left: 10px" src="img/home.png" />
+        </div>
+        <div class="konten">
+          <a style="margin-left: 9px" href="index.html">Home</a>
+        </div>
+      </div>
+      <div class="nav">
+        <div class="box">
+          <img src="img/history.png" />
+        </div>
+        <div class="konten">
+          <a href="metaBook.html">Intro</a>
+        </div>
+      </div>
+      <div class="nav">
+        <div class="box">
+          <img src="img/intro.png" alt="VR" />
+        </div>
+        <div class="konten">
+          <a href="metaHist.html">History</a>
+        </div>
+      </div>
+      <div class="nav">
+        <div class="box">
+          <img src="img/room.png" />
+        </div>
+        <div class="konten">
+          <a href="metaRoom.html">Room</a>
+        </div>
+      </div>
+      <div class="nav">
+        <div class="box">
+          <img style="margin-right: 15px" src="img/video.png" />
+        </div>
+        <div class="konten">
+          <a style="margin-right: 10px" href="metavid.html">video</a>
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex flex-column align-items-center">
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Tutorial!!</strong> Letakan kursor di ujung (atas atau bawah) kertas, kemudian klik dan tarik kertas untuk membuka halaman buku
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <div id="flipbook" class="flip">
+        <div class="hard"><img src="img/cover.jpg" alt="cover" /></div>
+        <div class="hard" style="background-color: white">
+          <p>
+            Aldo Wijaya <br />
+            Farhan A. Alfath
+          </p>
+        </div>
+        <div class="page"><img src="img/hal1.jpg" alt="hal1" /></div>
+        <div class="page"><img src="img/hal2.jpg" alt="hal2" /></div>
+        <div class="page"><img src="img/hal3.jpg" alt="hal3" /></div>
+        <div class="page"><img src="img/hal4.jpg" alt="hal4" /></div>
+        <div class="page"><img src="img/hal5.jpg" alt="hal5" /></div>
+        <div class="page"><img src="img/hal6.jpg" alt="hal6" /></div>
+        <div class="page"><img src="img/hal7.jpg" alt="hal7" /></div>
+        <div class="page"><img src="img/hal8.jpg" alt="hal8" /></div>
+        <div class="page"><img src="img/hal9.jpg" alt="hal9" /></div>
+        <div class="page"><img src="img/hal10.jpg" alt="hal10" /></div>
+        <div class="page"><img src="img/hal11.jpg" alt="hal11" /></div>
+        <div class="page"><img src="img/hal12.jpg" alt="hal12" /></div>
+        <div class="hard" style="background-color: white"></div>
+        <div class="hard"><img src="img/backover.jpg" alt="backover" /></div>
+      </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Turn JS -->
+    <script src="turn.min.js"></script>
+    <script>
+      $("#flipbook").turn({ gradients: true, acceleration: true, autoCenter: true });
+    </script>
+  </body>
+</html>
