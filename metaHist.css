@@ -1,6 +1,14 @@
 body {
   background: rgb(0, 0, 0);
-  overflow-x: hidden;
+  /* width: 100%; */
+  /* overflow-x: hidden; */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #flipbook {
@@ -9,7 +17,7 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
   z-index: 5;
-  position: absolute;
+  position: relative;
 }
 
 #flipbook img {
@@ -100,18 +108,61 @@ body {
   color: #c9e265;
 }
 
-.container .book {
-  margin-top: 20px;
-}
-.container .book img {
-  width: 50px;
-  height: 50px;
-  margin: 0 30px;
-  cursor: pointer;
-}
-
 .alert {
   max-width: 500px;
   margin: auto;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    width: 850px;
+  }
+  #flipbook {
+    width: 800px;
+    height: 400px;
+  }
+  #flipbook img {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container {
+    width: 510px;
+  }
+  #flipbook {
+    width: 500px;
+    height: 250px;
+  }
+  #flipbook img {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    width: 510px;
+  }
+  #flipbook {
+    width: 400px;
+    height: 200px;
+  }
+  #flipbook img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    width: 380px;
+  }
+  #flipbook {
+    width: 320px;
+    height: 160px;
+  }
+  #flipbook img {
+    width: 160px;
+    height: 160px;
+  }
 }
