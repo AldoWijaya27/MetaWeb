@@ -15,6 +15,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 2px solid black; */
 }
 
 .container .slider {
@@ -28,12 +29,12 @@ body {
 .container ul {
   transition: ease-in-out 0.1s;
   position: relative;
-  /* bottom: 20px; */
   margin-top: 480px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   z-index: 5;
+  /* flex-wrap: wrap; */
   opacity: 0;
   /* border: 2px solid red; */
 }
@@ -46,6 +47,7 @@ body {
   list-style: none;
   cursor: pointer;
   margin: 10px;
+  /* flex-direction: row; */
 }
 
 .container ul li video {
@@ -71,12 +73,41 @@ video {
   height: 100%;
 }
 
-@mediaa screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
   .container ul li video {
-    max-width: 20px;
+    width: 70px;
   }
 
   .container ul li img {
-    width: 28px;
+    width: 76px;
+    height: 56px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container ul li video {
+    width: 45px;
+  }
+
+  .container ul li img {
+    width: 52px;
+    height: 46px;
+  }
+
+  .container ul li {
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .container ul li video {
+    width: 30px;
+  }
+
+  .container ul li img {
+    width: 36px;
+    height: 38px;
+  }
+  .container ul li {
+    margin: 5px;
   }
 }
